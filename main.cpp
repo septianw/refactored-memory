@@ -16,20 +16,10 @@ int main(int argc, char *argv[])
     QString s1("Paris");
     QString s2("London");
 
-    QList<QString> list;
-    // Stream into container
+    // Convenient container classes
+    QStringList list;
     list << s1 << s2;
-
-    // Java and STL like iteration
-    QListIterator<QString> iter(list);
-    while(iter.hasNext()) {
-        cout << iter.next();
-        if (iter.hasNext()) {
-            cout<<" ";
-        }
-    }
-    cout<<"!"<<endl;
-
-//    QString s = s1 + " " + s2 + "!";
-//    cout << s << endl;
+    // Join strings
+    QString s = list.join(" ") + "!";
+    cout<< s << endl;
 }
