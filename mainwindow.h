@@ -26,6 +26,28 @@ private slots:
 
     void on_buttonEqual_clicked();
 
+    void on_button3_clicked();
+
+    void on_button4_clicked();
+
+    void on_button5_clicked();
+
+    void on_button6_clicked();
+
+    void on_button7_clicked();
+
+    void on_button8_clicked();
+
+    void on_button9_clicked();
+
+    void on_pushButton_10_clicked();
+
+    void on_buttonMultiply_clicked();
+
+    void on_buttonMinus_clicked();
+
+    void on_buttonPlus_clicked();
+
 private:
     double FirstNum;
     double SecondNum;

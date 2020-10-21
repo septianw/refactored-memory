@@ -118,12 +118,68 @@ void MainWindow::on_button2_clicked()
     MainWindow::setNumber(2);
 }
 
-void MainWindow::on_buttonDivide_clicked()
+void MainWindow::on_button3_clicked()
 {
     QTextStream stream(stdout);
-    stream << "button divide clicked" << endl;
-//    ui->lcdPanel->display();
-    MainWindow::setOperator('/');
+    stream << "button 3 clicked" << endl;
+    ui->lcdPanel->display(3);
+    MainWindow::setNumber(3);
+}
+
+void MainWindow::on_button4_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button 4 clicked" << endl;
+    ui->lcdPanel->display(4);
+    MainWindow::setNumber(4);
+}
+
+void MainWindow::on_button5_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button 5 clicked" << endl;
+    ui->lcdPanel->display(5);
+    MainWindow::setNumber(5);
+}
+
+void MainWindow::on_button6_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button 6 clicked" << endl;
+    ui->lcdPanel->display(6);
+    MainWindow::setNumber(6);
+}
+
+void MainWindow::on_button7_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button 7 clicked" << endl;
+    ui->lcdPanel->display(7);
+    MainWindow::setNumber(7);
+}
+
+void MainWindow::on_button8_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button 8 clicked" << endl;
+    ui->lcdPanel->display(8);
+    MainWindow::setNumber(8);
+}
+
+void MainWindow::on_button9_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button 9 clicked" << endl;
+    ui->lcdPanel->display(9);
+    MainWindow::setNumber(9);
+}
+
+void MainWindow::on_pushButton_10_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button 0 clicked" << endl;
+    ui->lcdPanel->display(0);
+    MainWindow::setNumber(0);
 }
 
 void MainWindow::on_buttonEqual_clicked()
@@ -133,4 +189,32 @@ void MainWindow::on_buttonEqual_clicked()
     result = MainWindow::calculate();
     stream << "Calculation result is " << result << endl;
     ui->lcdPanel->display(result);
+}
+
+void MainWindow::on_buttonDivide_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button divide clicked" << endl;
+    MainWindow::setOperator('/');
+}
+
+void MainWindow::on_buttonMultiply_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button multiply clicked" << endl;
+    MainWindow::setOperator('*');
+}
+
+void MainWindow::on_buttonMinus_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button minus clicked" << endl;
+    MainWindow::setOperator('-');
+}
+
+void MainWindow::on_buttonPlus_clicked()
+{
+    QTextStream stream(stdout);
+    stream << "button plus clicked" << endl;
+    MainWindow::setOperator('+');
 }
