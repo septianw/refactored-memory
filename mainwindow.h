@@ -49,14 +49,20 @@ private slots:
     void on_buttonPlus_clicked();
 
 private:
-    double FirstNum;
-    double SecondNum;
+    double LcdDisplay;
     bool ClearTime;
-    char Operator;
+    int Operator;
+    QString LcdStringFirst;
+    QString LcdStringSecond;
     Ui::MainWindow *ui;
+
     void setFirst(double FirstNumber);
     void setSecond(double SecondNumber);
+    void setLcd(double NumberButton);
+    void clearLcd();
     double calculate();
+    void firstInit();
+    void showStatus();
 };
 
 #endif // MAINWINDOW_H
